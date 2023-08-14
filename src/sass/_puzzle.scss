@@ -1,0 +1,49 @@
+.puzzle{
+    width: 80%;
+    height: 80vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    @for $i from 0 through 15 {
+        $class-name: "card_#{$i}";
+        $active: "_active";
+        $remove: "_remove";
+      
+        .#{$class-name} {
+          background-color: green;
+          width: 25%;
+          text-align: center;
+          border: 1px solid black;
+
+          img{
+            visibility: hidden;
+          }
+
+          &#{$active} {
+            background-color: orange;
+            width: 25%;
+            text-align: center;
+            border: 1px solid black;
+            visibility: visible;
+            pointer-events: none;
+            user-select: none;
+          }
+
+          &#{$remove} {
+            background-color: red;
+            width: 25%;
+            text-align: center;
+            border: 1px solid black;
+            visibility: visible;
+          }
+      
+          &:hover {
+            background-color: lightgray;
+          }
+        }
+      }
+      
+}

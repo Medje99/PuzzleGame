@@ -1,0 +1,508 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: lightgreen;
+}
+
+.startGame {
+  width: 40%;
+  height: 10vh;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem 0 5rem;
+}
+.startGame span {
+  font-size: 5rem;
+}
+.startGame button {
+  width: 10rem;
+  height: 5rem;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+}
+.startGame button:hover {
+  transform: scale(1.2);
+}
+
+.puzzle {
+  width: 80%;
+  height: 80vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.puzzle .card_0 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_0 img {
+  visibility: hidden;
+}
+.puzzle .card_0_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_0_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_0:hover {
+  background-color: lightgray;
+}
+.puzzle .card_1 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_1 img {
+  visibility: hidden;
+}
+.puzzle .card_1_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_1_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_1:hover {
+  background-color: lightgray;
+}
+.puzzle .card_2 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_2 img {
+  visibility: hidden;
+}
+.puzzle .card_2_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_2_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_2:hover {
+  background-color: lightgray;
+}
+.puzzle .card_3 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_3 img {
+  visibility: hidden;
+}
+.puzzle .card_3_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_3_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_3:hover {
+  background-color: lightgray;
+}
+.puzzle .card_4 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_4 img {
+  visibility: hidden;
+}
+.puzzle .card_4_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_4_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_4:hover {
+  background-color: lightgray;
+}
+.puzzle .card_5 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_5 img {
+  visibility: hidden;
+}
+.puzzle .card_5_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_5_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_5:hover {
+  background-color: lightgray;
+}
+.puzzle .card_6 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_6 img {
+  visibility: hidden;
+}
+.puzzle .card_6_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_6_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_6:hover {
+  background-color: lightgray;
+}
+.puzzle .card_7 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_7 img {
+  visibility: hidden;
+}
+.puzzle .card_7_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_7_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_7:hover {
+  background-color: lightgray;
+}
+.puzzle .card_8 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_8 img {
+  visibility: hidden;
+}
+.puzzle .card_8_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_8_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_8:hover {
+  background-color: lightgray;
+}
+.puzzle .card_9 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_9 img {
+  visibility: hidden;
+}
+.puzzle .card_9_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_9_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_9:hover {
+  background-color: lightgray;
+}
+.puzzle .card_10 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_10 img {
+  visibility: hidden;
+}
+.puzzle .card_10_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_10_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_10:hover {
+  background-color: lightgray;
+}
+.puzzle .card_11 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_11 img {
+  visibility: hidden;
+}
+.puzzle .card_11_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_11_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_11:hover {
+  background-color: lightgray;
+}
+.puzzle .card_12 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_12 img {
+  visibility: hidden;
+}
+.puzzle .card_12_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_12_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_12:hover {
+  background-color: lightgray;
+}
+.puzzle .card_13 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_13 img {
+  visibility: hidden;
+}
+.puzzle .card_13_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_13_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_13:hover {
+  background-color: lightgray;
+}
+.puzzle .card_14 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_14 img {
+  visibility: hidden;
+}
+.puzzle .card_14_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_14_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_14:hover {
+  background-color: lightgray;
+}
+.puzzle .card_15 {
+  background-color: green;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+.puzzle .card_15 img {
+  visibility: hidden;
+}
+.puzzle .card_15_active {
+  background-color: orange;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+  pointer-events: none;
+  user-select: none;
+}
+.puzzle .card_15_remove {
+  background-color: red;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+  visibility: visible;
+}
+.puzzle .card_15:hover {
+  background-color: lightgray;
+}
+
+/*# sourceMappingURL=index.css.map */
